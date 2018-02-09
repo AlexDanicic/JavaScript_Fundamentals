@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Conditional Logic in JS</title>
+  <script type="text/javascript">
+    var someValue = 24;
+    var otherValue = 23;
+    /*
+    if (someValue > 30) {
+      console.log("first case");
+    }
+    else if (someValue < 30) {
+      console.log("second case");
+    }
+    else if (someValue === 24) {
+      console.log("This is strictly equal!");
+    }
+    */
+
+    // fourth case in thissituation
+    /*
+    if (someValue > 30) {
+      console.log("first case");
+    }
+    else if (someValue === 30) {
+      console.log("second case");
+    }
+    else if (someValue === 25) {
+      console.log("This is strictly equal!");
+    }
+    else {
+      console.log("fourth case")
+    }
+    */
+
+    //multy
+
+    // && if BOTH true will console.log the fifth case 
+    /*
+    if (someValue > 20 && otherValue > 20) {
+      console.log("fifth case");
+    }
+    */
+    // or ||
+    /*
+    if (someValue === 24 || otherValue === 24) {
+      console.log("sixth case");
+    }
+    */
+
+    // !=== not equal
+    var someValue1 = false;
+    /*
+    if (someValue1 !==24) {
+      
+    }
+    */
+    // same as somevalue === false
+    /*
+    if (!someValue1) {
+      
+    }
+    */
+
+    // ---- Conditional (ternary) Operator----
+    /*
+    var myResult = "";
+    myResult = (someValue === 24) ? "equal" : "not equal";
+    console.log(myResult);
+    */
+
+    // Switch Statement
+    /*
+    var userName = "Rimmer";
+    switch (userName) {
+      case "Lister":
+      document.write("Care for the good curry?");    break;
+      case "Rimmer": 
+      document.write("Welcome back, smeg head");
+        break;
+      default:
+      document.write("Are you an emohawk?");
+    }
+    */
+
+    var rightNow = new Date();
+    var currentHour = rightNow.getHours();
+    switch (true) {
+      case (currentHour > 8 && currentHour < 12):
+        document.write("Good Morning!");
+        break;
+      case (currentHour === 12):
+        document.write("Lunch Time");
+        break;
+      case (currentHour > 12 && currentHour < 18):
+        document.write("Siestaaaa");
+        break;
+      default:
+        document.write("Hard Worker");
+        break;
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Conditional Logic in JavaScript</h1>
+  <p>
+    var someValue = 24;
+    <br> var otherValue = 23;
+    <br>
+    <br> if (someValue > 30) {
+    <br> console.log("first case");
+    <br> }
+    <br> else if (someValue
+    < 30) { <br>
+      console.log("second case");
+      <br> }
+      <br> else if (someValue === 24) {
+      <br> console.log("This is strictly equal!");
+      <br> }
+      <br>
+  </p>
+
+  <p>In this case, the === wont work, because the statement is satisfied with the second condiion, even if the trird sample
+    is strictly equal to 24. It will fire out the "second case".</p>
+
+</body>
+
+</html>

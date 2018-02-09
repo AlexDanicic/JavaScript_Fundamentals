@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Functions</title>
+  <script>
+    // Simple version of function
+    
+
+    function myNewFunction() {
+      alert('Hello World!');
+      
+    }
+
+    myNewFunction (); 
+    
+    
+    /*
+    function myNewFunction (myValue) {
+      alert('Howdy, ' + myValue);
+    }
+    myNewFunction('pardner');
+    */
+
+    /*
+    function add(firstNumber, secondNumber) {
+      return firstNumber + secondNumber;
+    }
+    var myResult = add(1, 2);
+    alert(myResult);
+    */
+
+    /*
+    function add() {
+      var tempValue = 0;
+      for (i = 0; i < arguments.length; i++)
+      {
+        tempValue += arguments[i];
+      }
+      return tempValue;
+    }
+    var myValue = add(1,2,3,4,5);
+    console.log(myValue);
+    */
+
+    /*  // Function Literal!
+
+    var addMe = function () {
+      return arguments[0] + arguments[2];
+    }
+
+    var myNewValue = addMe(1,2,3,4);
+    console.log(myNewValue);
+    */
+
+
+    // Anonymous Function
+    // A functions does not need names.. 
+    // 1.
+    
+    /*
+    var myResult = (function () {
+      return arguments[0] + arguments[1];
+    }) (1,2);
+    console.log(myResult);
+    */
+    // 2.
+
+    document.write((function () {
+      return arguments[0] + arguments[1];
+    }) (2,6));
+
+  </script>
+</head>
+<body>
+  <h1>JavaScript Functions</h1>
+  <input type="button" value="Click Me!" onclick="myNewFunction();">
+  
+</body>
+</html>
