@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Global Scope vs. Function Scope</title>
+  <script>
+    /*
+    if (true) {
+      var x = 5;
+    }
+  console.log(x);
+  */
+
+
+    /*
+  //myScope = "global";
+  (function () {
+    if(true) {
+    var myScope = "function";
+    }
+    //myScope = 'I set this function inside the function' ;
+    console.log('Inside of this function, the scope is ' + myScope + ' scope');
+  }) ();
+    //console.log('Outside of this function, the scope is ' + myScope + ' scope');
+    */
+    var myScope = "global";
+    alert('window.myScope: ' + window.myScope);
+  
+  </script>
+</head>
+<body>
+  <h1>Global Scope vs. Function Scope</h1>
+  
+</body>
+</html>

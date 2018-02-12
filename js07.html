@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Looping Statement in JS</title>
+  <script>
+
+    var playlist = [];
+    playlist[0] = "Thunderstruck";
+    playlist[1] = "Highway To Hell";
+    playlist[2] = "You Shook Me All Night...";
+    playlist[3] = "Back In Black";
+    playlist[4] = "T.N.T.";
+
+    //while loop
+    /*
+    var i = 0;
+    while (i < playlist.length) {
+      document.write("<br />Now Playing: " + playlist[i]);
+      i++;
+    }
+    */
+
+    //do - while loop
+    
+    var someResult = false;
+    do {
+      document.write("This will print AT LEAST once");
+    }
+    while (someResult);
+  
+    /*
+    for (let i = 0; i < playlist.length; i++) {
+      document.write("<br />Now Playing: " + playlist[i]);      
+    }
+    */
+
+    // for ... in
+
+    for (i in playlist) {
+      document.write("<br />Now Playing: " + playlist[i]);
+    }
+  
+  </script>
+</head>
+<body>
+  <h1>Looping Statement in JS</h1>
+  <ul>
+    <li>while loop</li>
+    <li>do - while loop</li>
+    <li>for loop</li>
+    <li>for ... in loop</li>
+  </ul>
+  
+</body>
+</html>

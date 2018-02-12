@@ -1,0 +1,1 @@
+console.log('Hi from another external file script1.js :)');
